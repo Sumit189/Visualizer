@@ -1,0 +1,51 @@
+body {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+h1{
+
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 20px #53e3a6
+}
+
+button {
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: black;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+button:hover {
+  color: #000;
+  background-color: #f5f7f9;
+}
+
+#algo{
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  outline: 0;
+  background-color: black;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Visualizer</title>
+  <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="gen_random()">
+<center><h1>Sorting Visualizer</h1></center>
+<canvas id="myChart" height="120"></canvas>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js'></script><script  src="./script.js"></script>
+<center>
+<select id="algo">
+  <option value="selection">Selection Sort</option>
+  <option value="insertion">Insertion Sort</option>
+</select>
+<button onclick="sort()">Sort</button>
+<button onclick="gen_random()">Random</button>
+</center>
+</body>
+</html>
