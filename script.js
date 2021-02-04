@@ -10,13 +10,13 @@ function chng(){
   slider=document.getElementById("slider");
   switch(parseInt(slider.value)){
     case 1:
-      speed = 10;
+      speed = 500;
       break;
     case 2:
       speed = 100;
       break;
     case 3:
-      speed = 500;
+      speed = 10;
       break;
   }
   var value = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
