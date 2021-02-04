@@ -4,15 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Sorting Visualizer</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body onload="gen_random()">
 <center><h1>Sorting Visualizer</h1></center>
-<canvas id="myChart" height="120"></canvas>
+<canvas id="myChart" height="105"></canvas>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js'></script><script  src="./script.js"></script>
+  
+  <center >  
+    <div class="container">
+    <div class="slider" title="speed">
+      <input type="range" min="1" max="3" value="2" id="slider" oninput="chng()">
+    </div>
+  </div>
+  </center>
 <center>
-<select id="algo">
+<select id="algo" style="margin-top: 2%;">
+  <option value="bubble">Bubble Sort</option>
   <option value="selection">Selection Sort</option>
   <option value="insertion">Insertion Sort</option>
 </select>

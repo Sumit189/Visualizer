@@ -1,7 +1,7 @@
 body {
   background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: -webkit-linear-gradient(to right, #434343, #434343);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
 h1{
@@ -9,8 +9,8 @@ h1{
   font-family: "Trebuchet MS", Tahoma, sans-serif;
   color: #fff;
   text-shadow:
-    0 0 5px #fff,
-    0 0 20px #53e3a6
+    0 0 3px #fff,
+    0 0 10px #53e3a6
 }
 
 button {
@@ -49,3 +49,53 @@ button:hover {
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
 }
+
+option{
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  outline: 0;
+  background-color: black;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.slider {
+  width: 200px;
+  padding: 0 40px;
+}
+.slider input {
+  background: linear-gradient(to right, #53e3a6 0%, #53e3a6 50%, #eaeefb 50%, #eaeefb 100%);
+  border-radius: 8px;
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  transition: all 450ms ease-in;
+  -webkit-appearance: none;
+}
+.slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url(https://raw.githubusercontent.com/milenig/fend-mentor_pricing-component/3ccfd6b18e87377a950915288ef64c896969bf62/images/icon-slider.svg)  #000 center no-repeat;
+  box-shadow: 0px 0px 10px 0px #53e3a6;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+.slider input::-webkit-slider-thumb:hover {
+  background: url(https://raw.githubusercontent.com/milenig/fend-mentor_pricing-component/3ccfd6b18e87377a950915288ef64c896969bf62/images/icon-slider.svg) #fff center no-repeat;
+}
+.slider input::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  background: url(https://raw.githubusercontent.com/milenig/fend-mentor_pricing-component/3ccfd6b18e87377a950915288ef64c896969bf62/images/icon-slider.svg) #fff center no-repeat;
+}
+
