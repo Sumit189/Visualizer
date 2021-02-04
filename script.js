@@ -16,7 +16,7 @@ function chng(){
       speed = 100;
       break;
     case 3:
-      speed = 10;
+      speed = 50;
       break;
   }
   var value = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
