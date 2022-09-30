@@ -239,14 +239,19 @@ function bubble_sort(array){
 
 function sort(){
  var algo = document.getElementById('algo').value;
- if(algo == 'bubble'){
-   bubble_sort(arr);
- }
- if(algo == "selection"){
-   selection_sort(arr);
- } 
- if(algo == "insertion"){
-   insertion_sort(arr);
+ switch(algo){
+  case "bubble":
+    bubble_sort(arr);
+    break
+  case "selection":
+    selection_sort(arr);
+    break
+  case "insertion":
+    insertion_sort(arr);
+    break;
+  default:
+    alert("Invalid selection");
+    break;
  }
 }
 
