@@ -246,16 +246,16 @@ function sort(){
  if(inAction == false)
   switch(algo){
     case "bubble":
-      bubble_sort(arr);
       inAction = true;
+      bubble_sort(arr);
       break
     case "selection":
-      selection_sort(arr);
       inAction = true;
+      selection_sort(arr);
       break
     case "insertion":
-      insertion_sort(arr);
       inAction = true;
+      insertion_sort(arr);
       break;
     default:
       alert("Invalid selection");
