@@ -147,6 +147,7 @@ function selection_sort(inputArr){
       }, speed * i);
       
   }
+  inAction = false;
 }
 
 function insertion_sort(inputArr){
@@ -191,7 +192,7 @@ function insertion_sort(inputArr){
     
   }, speed*i);
 }
-
+inAction = false;
 }
 
 function bubble_sort(array){
@@ -235,23 +236,31 @@ function bubble_sort(array){
   completed_arr[i]=1;
 }, speed*i );
   }
+  inAction = false;
 }
+
+var inAction = false;
 
 function sort(){
  var algo = document.getElementById('algo').value;
- switch(algo){
-  case "bubble":
-    bubble_sort(arr);
-    break
-  case "selection":
-    selection_sort(arr);
-    break
-  case "insertion":
-    insertion_sort(arr);
-    break;
-  default:
-    alert("Invalid selection");
-    break;
+ if(inAction == false)
+  switch(algo){
+    case "bubble":
+      bubble_sort(arr);
+      inAction = true;
+      break
+    case "selection":
+      selection_sort(arr);
+      inAction = true;
+      break
+    case "insertion":
+      insertion_sort(arr);
+      inAction = true;
+      break;
+    default:
+      alert("Invalid selection");
+      break;
+  }
  }
 }
 
