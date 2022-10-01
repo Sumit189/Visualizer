@@ -311,6 +311,7 @@ function sort(){
     case "quick_sort":
       inAction = true;
       quickSort(arr, 0 , arr.length-1);
+      break;
     default:
       alert("Invalid selection");
       break;
