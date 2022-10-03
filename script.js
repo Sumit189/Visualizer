@@ -395,7 +395,12 @@ function mergeSort(arr) {
 
   let result = merge(sorted_arr1_subarrays, sorted_arr2_subarrays);
 
-  return result;
+  // return result;
+  for(var i = 0; i < result.length; i++){
+    c_[i]="#fff";
+  }
+  myChart.destroy();
+  make_chart(result,lbl,c_,b_c); 
 }
 
 
@@ -422,6 +427,10 @@ function sort(){
     case "quick_sort":
       inAction = true;
       quickSort(arr, 0 , arr.length-1);
+      break;
+    case "merge_sort":
+      inAction = true;
+      merge(arr);
       break;
     default:
       alert("Invalid selection");
